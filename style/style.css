@@ -1,0 +1,84 @@
+body{
+    background-image: url(../img/Background.jpg);
+    background-position: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+main{
+    background-color: #97E7E1;
+    border: 2px solid black;
+    border-radius: 27px 27px 27px 27px;
+    width: 80vmin;
+    height: fit-content;
+    padding: 9px;
+}
+
+main h1{
+    font-size: 2.2em;
+    text-align: center;
+}
+
+.container-choose #keliling, #luas{
+    width:20%;
+    font-size: 1.2em;
+}
+
+main h1,.container-choose, .container-form{
+    margin-bottom: 15px;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+article{
+    display: flex;
+}
+
+label{
+    font-size: 1.5em;
+}
+#panjang{
+    margin-bottom: 10px;
+    width: 78%;
+}
+
+#lebar{
+    width: 78%;
+    margin-left: 19px;
+}
+
+.container-hasil #hasil{
+    margin-bottom: 10px;
+}
+
+
+
+@media screen and (max-width:480px) {
+    
+    .container-choose #keliling, #luas{
+        width:40%;
+        font-size: 1.2em;
+    }
+
+    article{
+        flex-direction: column;
+    }
+
+    .container-lebar{
+        margin-top: -20px;
+    }
+    #panjang{
+        margin-top: 10px;
+        width: 90%;
+    }
+    #lebar{
+        margin-left: 0;
+        margin-top: 10px;
+        width: 90%;
+    }    
+}
